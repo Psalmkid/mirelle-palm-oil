@@ -3,109 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mirelle Industries offers premium palm oil and effective cleaning solutions, delivered with care across Nigeria.">
+    <meta property="og:title" content="Mirelle Industries">
+    <meta property="og:description" content="Mirelle Industries offers premium palm oil and effective cleaning solutions, delivered with care across Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/Img/5l.jpg">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <meta name="author" content="Samuel Drea">
     <meta name="developer" content="Samuel Drea">
     <title>Mirelle Industries</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 <body class="home-page-bg">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">MIRELLE</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li class="cart-icon">
-                    <a href="cart.html">
-                        🛒 Cart
-                        <span id="cart-count">0</span>
-                    </a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+        <!-- Navigation -->
+    <header class="top-nav">
+        <div style="display:flex; align-items:center; gap:15px;">
+            <button class="desktop-menu-btn toggle-menu" aria-label="Menu" aria-controls="drawer" aria-expanded="false">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+            <span class="brand-logo">Mirelle</span>
+        </div>
+        
+        <nav class="pc-nav-links">
+            <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
+            <a href="products.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Products</a>
+            <a href="about.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> About Us</a>
+            <a href="cart.html" class="cart-link" id="pc-cart-icon"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-count">0</span> Cart</a>
         </nav>
+
+        <div style="display:flex; align-items:center; gap: 10px;">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Night Mode">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <a href="contact.html" class="contact-btn">Contact</a>
+        </div>
     </header>
 
+        <nav class="bottom-nav">
+        <button class="nav-icon toggle-menu" aria-controls="drawer" aria-expanded="false">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <span>Menu</span>
+        </button>
+        <button class="nav-icon" onclick="window.history.back()">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+            <span>Back</span>
+        </button>
+        <button class="nav-icon" onclick="window.location.href='index.html'">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+        </button>
+        <button class="nav-icon" onclick="window.location.href='products.html'">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            <span>Products</span>
+        </button>
+        <button class="nav-icon" id="cart-icon" onclick="window.location.href='cart.html'">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Cart</span>
+            <span class="mobile-cart-count">0</span>
+        </button>
+    </nav>
 
+    <div class="drawer-overlay toggle-menu"></div>
+    <div class="drawer" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="drawer-header">
+            <h2 style="margin: 0;">Menu</h2>
+            <button class="close-drawer toggle-menu" aria-label="Close Menu" style="background:none; border:none; cursor:pointer; color:var(--text-main); padding: 5px;" aria-controls="drawer" aria-expanded="false">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        </div>
+    <div>
+        <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
+        <a href="products.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Products</a>
+        <a href="cart.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Cart</a>
+        <a href="contact.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Contact</a>
+        <a href="about.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> About Us</a>
+        <a href="customer-support.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Support Center</a>
+        <a href="copyright.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14,2 14,8 20,8"></polyline></svg> Copyright</a>
+    </div>
+    </div>
 
     <!-- Home -->
-    <section id="home" class="home">
-        <h2>Welcome to Mirelle Industries</h2>
-        <p>We are a leading producer of high-quality palm oil and cleaning solutions.</p>
-    </section>
+    <main id="main-content">
+        <section class="hero">
+            <h1>Premium Palm Oil & Effective Cleaning Solutions</h1>
+            <p>Experience the highest quality ingredients for your home and business, carefully processed to preserve purity and strength.</p>
+        </section>
 
-    <!-- Meet the Owner -->
-    <section class="owner-section">
-        <div class="owner-container">
-            <div class="owner-image">
-                <img src="assets/Img/IMG_0023.JPG" alt="Company Owner">
+        <section class="featured-categories">
+            <div class="products-header">
+                <h2 style="font-size: 2rem; margin-bottom: 20px;">Our Top Categories</h2>
             </div>
-            <div class="owner-content">
-                <h2>Meet the Company Owner</h2>
-                <p>Dedicated to excellence and committed to providing the finest quality products for our valued customers.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌴 Pure Palm Oil</h3>
+                    <p>Rich in Vitamin A and E, naturally vibrant in color, and perfect for authentic cooking. Available from 1L to 25L.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🧼 Multipurpose Cleaners</h3>
+                    <p>Powerful formulas designed to handle household and commercial cleaning effectively. Gentle yet tough on stains.</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-   <section id="about" class="about">
-
-<div class="about-container">
-
-<h2>About Mirelle Industries</h2>
-
-<p class="about-intro">
-Mirelle Industries is committed to producing and supplying high-quality palm oil and effective multipurpose cleaning solutions. Our products are made from carefully selected ingredients and processed under strict hygienic conditions to ensure purity, safety, and customer satisfaction.
-</p>
-
-<div class="about-grid">
-
-<div class="about-card">
-
-<h3>🌴 Palm Oil</h3>
-
-<p>
-Our palm oil is freshly processed, rich in nutrients, and naturally vibrant in color. It is ideal for home cooking, food processing, and commercial use. We ensure proper filtration and safe packaging to preserve freshness and quality.
-</p>
-
-</div>
-
-
-<div class="about-card">
-
-<h3>🧼 Multipurpose Cleaning Solutions</h3>
-
-<p>
-Our multipurpose cleaning solutions are designed to handle a wide range of household and commercial cleaning tasks effectively while remaining safe for everyday use.
-</p>
-
-<h4>Common Uses</h4>
-
-<ul>
-<li>General surface cleaning for countertops, floors, and bathroom fixtures</li>
-<li>Degreasing kitchen surfaces and dishwashing</li>
-<li>Removing stains from fabrics and upholstery</li>
-<li>Disinfecting surfaces by eliminating germs and bacteria</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="about-btn">
-<button onclick="window.location.href='products.html'">View Products</button>
-</div>
-
-</div>
-
-</section>
+        </section>
 
 <section class="bulk-banner">
   <h2>Bulk Orders Available</h2>
   <p>Need large quantities? We offer special pricing for bulk purchases.</p>
   <a href="contact.html" class="bulk-btn">Contact Us</a>
 </section>
+    </main>
 
     <footer class="footer section">
         <div class="footer__container container grid">
@@ -115,15 +131,6 @@ Our multipurpose cleaning solutions are designed to handle a wide range of house
                     <li>Mirelle Industries</li>
                     <li>Abraham Adesanya, Eti-Osa, Lagos, Nigeria</li>
                     <li>+234-706-450-9776</li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">About Us</h3>
-                <ul class="footer__links">
-                    <li><a href="customer-support.html" class="footer__link">Support Center</a></li>
-                    <li><a href="customer-support.html" class="footer__link">Customer Support</a></li>
-                    <li><a href="index.html" class="footer__link">About Us</a></li>
-                    <li><a href="copyright.html" class="footer__link">Copyright</a></li>
                 </ul>
             </div>
             <div class="footer__content">
@@ -144,6 +151,25 @@ Our multipurpose cleaning solutions are designed to handle a wide range of house
         </div>
     </footer>
 
-<script src="assets/script.js"></script>
-</body>
-</html>
+<script src="script/script.js"></script>
+</body> </html>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,57 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mirelle Industries offers premium palm oil and effective cleaning solutions, delivered with care across Nigeria.">
+    <meta property="og:title" content="Palm Oil 3L - Mirelle Industries">
+    <meta property="og:description" content="Mirelle Industries offers premium palm oil and effective cleaning solutions, delivered with care across Nigeria.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/Img/5l.jpg">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <meta name="author" content="Samuel Drea">
     <meta name="developer" content="Samuel Drea">
     <title>Palm Oil 3L - Mirelle Industries</title>
-    <link rel="stylesheet" href="assets/style.css">
-</head>
+    <link rel="stylesheet" href="css/style.css"></head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">MIRELLE</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li class="cart-icon">
-                    <a href="cart.html">
-                        🛒 Cart
-                        <span id="cart-count">0</span>
-                    </a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header class="top-nav">
+        <div style="display:flex; align-items:center; gap:15px;">
+            <button class="desktop-menu-btn toggle-menu" aria-label="Menu" aria-controls="drawer" aria-expanded="false">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <span class="brand-logo">Mirelle</span>
+        </div>
+        
+        <nav class="pc-nav-links">
+            <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
+            <a href="products.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Products</a>
+            <a href="about.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> About Us</a>
+            <a href="cart.html" class="cart-link" id="pc-cart-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Cart
+            </a>
         </nav>
+
+        <div style="display:flex; align-items:center; gap: 10px;">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Night Mode">
+                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+            <a href="contact.html" class="contact-btn">Contact</a>
+        </div>
     </header>
+
+        <nav class="bottom-nav">
+        <button class="nav-icon toggle-menu" aria-controls="drawer" aria-expanded="false">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <span>Menu</span>
+        </button>
+        <button class="nav-icon" onclick="window.history.back()">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+            <span>Back</span>
+        </button>
+        <button class="nav-icon" onclick="window.location.href='index.html'">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+        </button>
+        <button class="nav-icon" onclick="window.location.href='products.html'">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            <span>Products</span>
+        </button>
+        <button class="nav-icon" id="cart-icon" onclick="window.location.href='cart.html'">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            <span>Cart</span>
+            <span class="mobile-cart-count">0</span>
+        </button>
+    </nav>
+
+    <div class="drawer-overlay toggle-menu"></div>
+    <div class="drawer" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="drawer-header">
+            <h2 style="margin: 0;">Menu</h2>
+            <button class="close-drawer toggle-menu" aria-label="Close Menu" style="background:none; border:none; cursor:pointer; color:var(--text-main); padding: 5px;" aria-controls="drawer" aria-expanded="false">
+                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+        </div>
+        <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
+        <a href="products.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Products</a>
+        <a href="cart.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Cart</a>
+        <a href="contact.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Contact</a>
+        <a href="about.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> About Us</a>
+        <a href="customer-support.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Support Center</a>
+        <a href="copyright.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14,2 14,8 20,8"></polyline></svg> Copyright</a>
+    </div>
+        <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
+        <a href="products.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21
+    </div>
+
+    <main id="main-content">
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <a href="index.html">Home</a> <span>/</span> <a href="products.html">Products</a> <span>/</span> Palm Oil 3L
+    </div>
 
     <!-- Product Details -->
     <section class="product-detail">
         <div class="product-container">
             <div class="product-image">
-                <img src="assets/Img/3l.jpeg" alt="Palm Oil 3L">
+                <img src="assets/Img/3l.jpg" alt="Palm Oil 3L" loading="lazy">
             </div>
             <div class="product-info">
+                <span class="stock-status in-stock">In Stock</span>
                 <h1 class="product-title">Palm Oil 3L</h1>
                 <p class="product-subtitle">Freshly processed, rich in nutrients.</p>
                 
-                <div class="price-display" id="priceDisplay">₦10500</div>
+                <div class="price-display" id="priceDisplay">₦7500</div>
 
                 <h3 class="pack-title">Choose a Pack:</h3>
                 <div class="pack-options">
-                    <div class="pack-card active" onclick="selectPack(this, 'Palm Oil 3L', 10500)">
+                    <div class="pack-card active" onclick="selectPack(this, 'Palm Oil 3L', 7500)">
                         <h4>Single</h4>
-                        <p>₦10500</p>
+                        <p>₦7500</p>
                     </div>
-                    <div class="pack-card" onclick="selectPack(this, 'Palm Oil 3L (Pack of 3)', 31000)">
+                    <div class="pack-card" onclick="selectPack(this, 'Palm Oil 3L (Pack of 3)', 22500)">
                         <span class="save-badge">Save ₦500</span>
                         <h4>Pack of 3</h4>
-                        <p>₦31000</p>
+                        <p>₦22500</p>
                     </div>
                 </div>
 
-                <button class="add-cart-btn" onclick="addProductPackToCart(this)">
+                <button class="add-to-cart-btn" onclick="addProductPackToCart(this)">
                     Add to Cart
                 </button>
                 
@@ -61,10 +136,60 @@
                     Bulk Order Inquiry
                 </button>
             </div>
+
+            <div class="product-meta">
+                <p><strong>Category:</strong> Palm Oil</p>
+                <p><strong>SKU:</strong> PO-003</p>
+            </div>
         </div>
     </section>
 
-    <footer class="footer section">
+    <!-- Product Tabs -->
+    <section class="product-tabs-section">
+        <div class="tab-header">
+            <button class="tab-btn active" onclick="switchTab(event, 'desc')">Description</button>
+            <button class="tab-btn" onclick="switchTab(event, 'info')">Additional Info</button>
+            <button class="tab-btn" onclick="switchTab(event, 'shipping')">Shipping</button>
+        </div>
+        <div id="desc" class="tab-content active">
+            <h3>Product Description</h3>
+            <p>Our 3 Liter Palm Oil is freshly processed from the finest palm fruits. It is 100% natural, unadulterated, and rich in Vitamin A and E. Perfect for medium-sized families, providing authentic taste and aroma for numerous meals.</p>
+        </div>
+        <div id="info" class="tab-content">
+            <h3>Additional Information</h3>
+            <ul>
+                <li><strong>Volume:</strong> 3 Liters</li>
+                <li><strong>Type:</strong> Red Palm Oil</li>
+                <li><strong>Packaging:</strong> Plastic Bottle</li>
+                <li><strong>Shelf Life:</strong> 12 Months</li>
+            </ul>
+        </div>
+        <div id="shipping" class="tab-content">
+            <h3>Shipping & Returns</h3>
+            <p>We deliver nationwide. Delivery times vary by location (1-3 days for Lagos, 3-7 days for other states). Returns are accepted within 7 days if the seal is unbroken.</p>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products-section">
+        <h2 class="section-title">Related Products</h2>
+        <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+            <div class="product-card">
+                <a href="palm-oil-2l.html"><img src="assets/Img/2l.jpg" alt="Palm Oil 2L" loading="lazy"><h3>Palm Oil 2L</h3></a>
+                <p class="price">₦5000</p>
+            </div>
+            <div class="product-card">
+                <a href="palm-oil-5l.html"><img src="assets/Img/5l.jpg" alt="Palm Oil 5L" loading="lazy"><h3>Palm Oil 5L</h3></a>
+                <p class="price">₦12500</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    </main>
+<footer class="footer section">
         <div class="footer__container container grid">
             <div class="footer__content">
                 <h3 class="footer__title">Our Information</h3>
@@ -72,15 +197,6 @@
                     <li>Mirelle Industries</li>
                     <li>Abraham Adesanya, Eti-Osa, Lagos, Nigeria</li>
                     <li>+234-706-450-9776</li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">About Us</h3>
-                <ul class="footer__links">
-                    <li><a href="customer-support.html" class="footer__link">Support Center</a></li>
-                    <li><a href="customer-support.html" class="footer__link">Customer Support</a></li>
-                    <li><a href="index.html" class="footer__link">About Us</a></li>
-                    <li><a href="copyright.html" class="footer__link">Copyright</a></li>
                 </ul>
             </div>
             <div class="footer__content">
@@ -101,6 +217,27 @@
         </div>
     </footer>
 
-<script src="assets/script.js"></script>
+<script src="script/script.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

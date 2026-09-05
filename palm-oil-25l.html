@@ -1,231 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mirelle Industries offers premium palm oil and effective cleaning solutions, delivered with care across Nigeria.">
-    <meta property="og:title" content="Palm Oil 25L - Mirelle Industries">
-    <meta property="og:description" content="Mirelle Industries offers premium palm oil and effective cleaning solutions, delivered with care across Nigeria.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/Img/5l.jpg">
-    <meta name="theme-color" content="#0f172a">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="shortcut icon" href="assets/favicon_io/favicon.ico">
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <meta name="author" content="Samuel Drea">
-    <meta name="developer" content="Samuel Drea">
-    <title>Palm Oil 25L - Mirelle Industries</title>
-    <link rel="stylesheet" href="css/style.css"></head>
-<body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-
-    <!-- Navigation -->
-       <header class="top-nav">
-        <div style="display:flex; align-items:center; gap:15px;">
-            <button class="desktop-menu-btn toggle-menu" aria-label="Menu" aria-controls="drawer" aria-expanded="false">
-                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            </button>
-            <span class="brand-logo">Mirelle</span>
-        </div>
-        
-        <nav class="pc-nav-links">
-            <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
-            <a href="products.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Products</a>
-            <a href="about.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> About Us</a>
-            <a href="cart.html" class="cart-link" id="pc-cart-icon">
-                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Cart
-            </a>
-        </nav>
-
-        <div style="display:flex; align-items:center; gap: 10px;">
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Night Mode">
-                <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            </button>
-            <a href="contact.html" class="contact-btn">Contact</a>
-        </div>
-    </header>
-
-        <nav class="bottom-nav">
-        <button class="nav-icon toggle-menu" aria-controls="drawer" aria-expanded="false">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            <span>Menu</span>
-        </button>
-        <button class="nav-icon" onclick="window.history.back()">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
-            <span>Back</span>
-        </button>
-        <button class="nav-icon" onclick="window.location.href='index.html'">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-            <span>Home</span>
-        </button>
-        <button class="nav-icon" onclick="window.location.href='products.html'">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-            <span>Products</span>
-        </button>
-        <button class="nav-icon" id="cart-icon" onclick="window.location.href='cart.html'">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-            <span>Cart</span>
-            <span class="mobile-cart-count">0</span>
-        </button>
-    </nav>
-
-    <div class="drawer-overlay toggle-menu"></div>
-    <div class="drawer" role="dialog" aria-modal="true" aria-hidden="true">
-        <div class="drawer-header">
-            <h2 style="margin: 0;">Menu</h2>
-            <button class="close-drawer toggle-menu" aria-label="Close Menu" style="background:none; border:none; cursor:pointer; color:var(--text-main); padding: 5px;" aria-controls="drawer" aria-expanded="false">
-                <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
-        </div>
-        <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
-        <a href="products.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg> Products</a>
-        <a href="cart.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> Cart</a>
-        <a href="contact.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Contact</a>
-        <a href="about.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg> About Us</a>
-        <a href="customer-support.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Support Center</a>
-        <a href="copyright.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14,2 14,8 20,8"></polyline></svg> Copyright</a>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Mirelle Palm Oil 25L &mdash; a trade-size jerrycan for commercial kitchens." name="description"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <title>
+   Palm Oil 25L &mdash; Mirelle Palm oil Limited
+  </title>
+  <link href="assets/favicon/favicon.ico" rel="icon" sizes="any"/>
+  <link href="assets/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="site.webmanifest" rel="manifest"/>
+  <meta content="#e8eee8" name="theme-color"/>
+  <meta content="index, follow" name="robots"/>
+  <link href="https://mirelleindustries.com/palm-oil-25l" rel="canonical"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Mirelle Palm Oil Limited" property="og:site_name"/>
+  <meta content="Palm Oil 25L &mdash; Mirelle Palm oil Limited" property="og:title"/>
+  <meta content="Mirelle Palm Oil 25L &mdash; a trade-size jerrycan for commercial kitchens." property="og:description"/>
+  <meta content="https://mirelleindustries.com/assets/favicon/android-chrome-512x512.png" property="og:image"/>
+ </head>
+ <body>
+  <header class="top-nav">
+   <div style="display:flex;align-items:center;gap:15px">
+    <button aria-expanded="false" aria-label="Open menu" class="desktop-menu-btn toggle-menu">
+     ☰
+    </button>
+    <a class="brand-logo" href="index.html">
+     Mirelle
+    </a>
+   </div>
+   <nav class="pc-nav-links">
+    <a href="index.html">
+     ⌂ &nbsp;Home
+    </a>
+    <a href="products.html">
+     ◈ &nbsp;Products
+    </a>
+    <a href="about.html">
+     ⓘ &nbsp;About
+    </a>
+    <a class="cart-link" href="cart.html">
+     🛒
+     <span class="cart-count">
+      0
+     </span>
+     Basket
+    </a>
+   </nav>
+   <a class="contact-btn" href="contact.html">
+    Talk to us
+   </a>
+  </header>
+  <aside aria-hidden="true" class="drawer">
+   <div class="drawer-header">
+    <span class="brand-logo">
+     Mirelle
+    </span>
+    <button class="drawer-close">
+     &times;
+    </button>
+   </div>
+   <nav>
+    <a href="index.html">
+     ⌂ &nbsp; Home
+    </a>
+    <a href="products.html">
+     ◈ &nbsp; Products
+    </a>
+    <a href="about.html">
+     ⓘ &nbsp; About
+    </a>
+    <a href="cart.html">
+     🛒 &nbsp; Basket
+     <span class="cart-count">
+      0
+     </span>
+    </a>
+    <a href="contact.html">
+     ✦ &nbsp; Contact
+    </a>
+    <a href="customer-support.html">
+     ? &nbsp; Support center
+    </a>
+   </nav>
+  </aside>
+  <div class="drawer-overlay">
+  </div>
+  <div class="breadcrumbs">
+   <a href="index.html">
+    Home
+   </a>
+   /
+   <a href="products.html">
+    Products
+   </a>
+   / Palm Oil 25L
+  </div>
+  <main class="product-detail" id="main-content">
+   <div class="product-container">
+    <div class="product-image">
+     <img alt="Mirelle Palm Oil 25L jerrycan" src="assets/Img/25l.jpeg"/>
     </div>
-
-    <main id="main-content">
-
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <a href="index.html">Home</a> <span>/</span> <a href="products.html">Products</a> <span>/</span> Palm Oil 25L
+    <section class="product-info">
+     <span class="stock-status">
+      In stock
+     </span>
+     <h1 class="product-title">
+      Palm Oil 25L
+     </h1>
+     <p class="product-subtitle">
+      A trade-size supply for restaurants, caterers and growing kitchens.
+     </p>
+     <div class="price-display">
+      ₦70,000
+     </div>
+     <h3 class="pack-title">
+      Choose a size
+     </h3>
+     <div class="pack-options">
+      <a class="pack-card" href="palm-oil-5l.html">
+       5L
+      </a>
+      <a class="pack-card active" href="palm-oil-25l.html">
+       25L
+      </a>
+     </div>
+     <button class="primary-btn" onclick="addProductToCart('Palm Oil 25L',70000,this)">
+      Add Palm Oil to basket
+     </button>
+     <div class="product-description">
+      <strong>
+       Built for busy service
+      </strong>
+      <p>
+       Keep a dependable supply close at hand with our largest palm oil format. Ask us about trade orders and delivery.
+      </p>
+     </div>
+    </section>
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="footer__container">
+    <div>
+     <h3 class="footer__title">
+      Mirelle Palm oil Limited
+     </h3>
+     <ul class="footer__list">
+      <li>
+       Pure palm oil, thoughtfully bottled.
+      </li>
+      <li>
+       Abraham Adesanya, Eti-Osa, Lagos
+      </li>
+      <li>
+       +234 706 450 9776
+      </li>
+     </ul>
     </div>
-
-    <!-- Product Details -->
-    <section class="product-detail">
-        <div class="product-container">
-            <div class="product-image">
-                <img src="assets/Img/25l.jpeg" alt="Palm Oil 25L" loading="lazy">
-            </div>
-            <div class="product-info">
-                <span class="stock-status in-stock">In Stock</span>
-                <h1 class="product-title">Palm Oil 25L</h1>
-                <p class="product-subtitle">Best value for commercial use.</p>
-                
-                <div class="price-display" id="priceDisplay">₦70000</div>
-
-                <h3 class="pack-title">Choose a Pack:</h3>
-                <div class="pack-options">
-                    <div class="pack-card active" onclick="selectPack(this, 'Palm Oil 25L', 70000)">
-                        <h4>Single</h4>
-                        <p>₦70000</p>
-                    </div>
-                </div>
-
-                <button class="add-to-cart-btn" onclick="addProductPackToCart(this)">
-                    Add to Cart
-                </button>
-
-                <button class="ask-pack-btn" onclick="window.location.href='contact.html'">
-                    Bulk Order Inquiry
-                </button>
-
-                <div class="product-meta">
-                    <p><strong>Category:</strong> Palm Oil</p>
-                    <p><strong>SKU:</strong> PO-025</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Tabs -->
-    <section class="product-tabs-section">
-        <div class="tab-header">
-            <button class="tab-btn active" onclick="switchTab(event, 'desc')">Description</button>
-            <button class="tab-btn" onclick="switchTab(event, 'info')">Additional Info</button>
-            <button class="tab-btn" onclick="switchTab(event, 'shipping')">Shipping</button>
-        </div>
-        <div id="desc" class="tab-content active">
-            <h3>Product Description</h3>
-            <p>Our 25 Liter Palm Oil is freshly processed from the finest palm fruits. It is 100% natural, unadulterated, and rich in Vitamin A and E. Perfect for all your commercial cooking needs, giving your meals that authentic taste and aroma.</p>
-        </div>
-        <div id="info" class="tab-content">
-            <h3>Additional Information</h3>
-            <ul>
-                <li><strong>Volume:</strong> 25 Liters</li>
-                <li><strong>Type:</strong> Red Palm Oil</li>
-                <li><strong>Packaging:</strong> Keg</li>
-                <li><strong>Shelf Life:</strong> 12 Months</li>
-            </ul>
-        </div>
-        <div id="shipping" class="tab-content">
-            <h3>Shipping & Returns</h3>
-            <p>We deliver nationwide. Delivery times vary by location (1-3 days for Lagos, 3-7 days for other states). Returns are accepted within 7 days if the seal is unbroken.</p>
-        </div>
-    </section>
-
-    <!-- Related Products -->
-    <section class="related-products-section">
-        <h2 class="section-title">Related Products</h2>
-        <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-            <div class="product-card">
-                <a href="palm-oil-5l.html"><img src="assets/Img/5l.jpg" alt="Palm Oil 5L" loading="lazy"><h3>Palm Oil 5L</h3></a>
-                <p class="price">₦12500</p>
-            </div>
-        </div>
-    </section>
-
-    
-    
-
-    </main>
-<footer class="footer section">
-        <div class="footer__container container grid">
-            <div class="footer__content">
-                <h3 class="footer__title">Our Information</h3>
-                <ul class="footer__list">
-                    <li>Mirelle Industries</li>
-                    <li>Abraham Adesanya, Eti-Osa, Lagos, Nigeria</li>
-                    <li>+234-706-450-9776</li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Products</h3>
-                <ul class="footer__links">
-                    <li><a href="products.html" class="footer__link">Palm Oil</a></li>
-                    <li><a href="products.html" class="footer__link">Cleaning Solutions</a></li>
-                    <li><a href="products.html" class="footer__link">View All</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__copy">
-            <span>&copy; 2026 Mirelle Industries. All rights reserved.</span>
-            <p class="dev-signature">
-                Website designed & developed by 
-            <a href="https://wa.me/09044487290" target="_blank" rel="noopener">Samuel Drea</a>
-            </p>
-        </div>
-    </footer>
-
-<script src="script/script.js"></script>
-</body>
-
+    <div>
+     <h3 class="footer__title">
+      Explore
+     </h3>
+     <ul class="footer__links">
+      <li>
+       <a class="footer__link" href="products.html">
+        Shop palm oil
+       </a>
+      </li>
+      <li>
+       <a class="footer__link" href="contact.html">
+        Bulk orders
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <div class="footer__copy">
+    <span>
+     &copy; 2026 Mirelle Palm oil Limited. All rights reserved.
+    </span>
+   </div>
+  </footer>
+  <nav class="bottom-nav">
+   <a href="index.html">
+    ⌂
+    <span>
+     Home
+    </span>
+   </a>
+   <a href="products.html">
+    ◈
+    <span>
+     Shop
+    </span>
+   </a>
+   <a href="about.html">
+    ⓘ
+    <span>
+     About
+    </span>
+   </a>
+   <a href="cart.html">
+    🛒
+    <span>
+     Basket
+    </span>
+   </a>
+  </nav>
+  <script src="script/script.js">
+  </script>
+ </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

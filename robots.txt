@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mirelleindustries.com/sitemap.xml
+Sitemap: https://mirellepalmoil.com/sitemap.xml
